@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FairShare — Auto-Capture & Split Expenses</title>
+    <meta name="description" content="Stop typing expenses. FairShare auto-captures payments and splits them instantly with your group. Works globally.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">FairShare</div>
+            <a href="#waitlist" class="nav-cta">Join Waitlist</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Stop typing expenses.<br>We capture them <span class="highlight">automatically.</span></h1>
+            <p class="subtitle">FairShare detects your payments, splits them with your group, and settles instantly. No manual entry. No awkward reminders. Works in any country.</p>
+
+            <div class="waitlist-form" id="waitlist">
+                <form id="signup-form">
+                    <div class="form-row">
+                        <input type="email" id="email" placeholder="you@example.com" required>
+                        <button type="submit">Join the Waitlist</button>
+                    </div>
+                    <p class="form-note">Free early access. No spam.</p>
+                </form>
+                <div id="success-message" class="success-message hidden">
+                    You're in! We'll notify you when FairShare launches.
+                </div>
+            </div>
+
+            <div class="social-proof">
+                <p>Be among the first to try FairShare</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">+</div>
+                    <h3>Create a Trip or Group</h3>
+                    <p>Going on a trip? Splitting rent? Create a group and invite your friends with one link.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">$</div>
+                    <h3>We Detect Your Payments</h3>
+                    <p>Paid for gas? Dinner? FairShare reads your bank alert and asks "Add to trip?" One tap. Done.</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">~</div>
+                    <h3>Settle Instantly</h3>
+                    <p>Trip over? See exactly who owes whom. Settle via UPI, Venmo, Zelle, or your local payment app.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <h2>Why FairShare?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#9889;</div>
+                    <h3>Auto-Capture Expenses</h3>
+                    <p>Bank SMS, UPI, card notifications — we read them and add expenses automatically. No typing.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127757;</div>
+                    <h3>Works Globally</h3>
+                    <p>USA, India, UK, Europe, Australia, Brazil — select your country and everything adapts. Currency, payments, language.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128270;</div>
+                    <h3>AI Receipt Scanner</h3>
+                    <p>Snap a photo of the bill. We extract each item. Tap to assign who had what. Tax and tip split proportionally.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128664;</div>
+                    <h3>Trip Mode</h3>
+                    <p>Activate trip mode and every payment during your travel dates gets flagged. Live dashboard shows running totals.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128176;</div>
+                    <h3>Instant Settlement</h3>
+                    <p>Don't just track — settle. Deep links to Venmo, UPI, Zelle, PIX, PayNow, or bank transfer. One tap.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128274;</div>
+                    <h3>Private & Secure</h3>
+                    <p>We never store card numbers. SMS is read on-device only. Your financial data stays on your phone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="poll-section">
+        <div class="container">
+            <h2>What feature matters most to you?</h2>
+            <p class="poll-subtitle">Help us build what you actually need.</p>
+            <form id="poll-form" class="poll">
+                <label class="poll-option">
+                    <input type="radio" name="feature" value="auto-capture" checked>
+                    <span class="poll-label">Auto-capture expenses (no manual entry)</span>
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="feature" value="receipt-scan">
+                    <span class="poll-label">AI receipt scanning & item-level split</span>
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="feature" value="trip-mode">
+                    <span class="poll-label">Trip mode with live dashboard</span>
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="feature" value="instant-settle">
+                    <span class="poll-label">Instant settlement (pay inside the app)</span>
+                </label>
+                <label class="poll-option">
+                    <input type="radio" name="feature" value="global">
+                    <span class="poll-label">Works in any country</span>
+                </label>
+            </form>
+        </div>
+    </section>
+
+    <section class="comparison">
+        <div class="container">
+            <h2>FairShare vs Splitwise</h2>
+            <div class="comparison-table">
+                <div class="comparison-row header">
+                    <div class="comparison-cell">Feature</div>
+                    <div class="comparison-cell">Splitwise</div>
+                    <div class="comparison-cell highlight-col">FairShare</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Add expenses</div>
+                    <div class="comparison-cell">Manual typing</div>
+                    <div class="comparison-cell highlight-col">Auto-captured</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Receipt scanning</div>
+                    <div class="comparison-cell">Total amount only</div>
+                    <div class="comparison-cell highlight-col">Item-level split</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Settlement</div>
+                    <div class="comparison-cell">Manual (separate app)</div>
+                    <div class="comparison-cell highlight-col">One-tap in-app</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Trip mode</div>
+                    <div class="comparison-cell">No</div>
+                    <div class="comparison-cell highlight-col">Yes, with live dashboard</div>
+                </div>
+                <div class="comparison-row">
+                    <div class="comparison-cell">Price</div>
+                    <div class="comparison-cell">$3/mo for Pro</div>
+                    <div class="comparison-cell highlight-col">Free core features</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="final-cta">
+        <div class="container">
+            <h2>Ready to ditch manual expense tracking?</h2>
+            <p>Join the waitlist and be the first to try FairShare.</p>
+            <a href="#waitlist" class="cta-button">Join the Waitlist</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 FairShare. Built with purpose.</p>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
