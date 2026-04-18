@@ -28,6 +28,29 @@
                         <input type="email" id="email" placeholder="you@example.com" required>
                         <button type="submit">Join the Waitlist</button>
                     </div>
+                    <p class="interest-label">What interests you most?</p>
+                    <div class="interest-options">
+                        <label class="interest-chip">
+                            <input type="radio" name="feature" value="auto-capture" checked>
+                            <span>Auto-capture expenses</span>
+                        </label>
+                        <label class="interest-chip">
+                            <input type="radio" name="feature" value="receipt-scan">
+                            <span>AI receipt scanning</span>
+                        </label>
+                        <label class="interest-chip">
+                            <input type="radio" name="feature" value="trip-mode">
+                            <span>Trip mode</span>
+                        </label>
+                        <label class="interest-chip">
+                            <input type="radio" name="feature" value="instant-settle">
+                            <span>Instant settlement</span>
+                        </label>
+                        <label class="interest-chip">
+                            <input type="radio" name="feature" value="global">
+                            <span>Works globally</span>
+                        </label>
+                    </div>
                     <p class="form-note">Free early access. No spam.</p>
                 </form>
                 <div id="success-message" class="success-message hidden">
@@ -102,35 +125,6 @@
                     <p>We never store card numbers. SMS is read on-device only. Your financial data stays on your phone.</p>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <section class="poll-section">
-        <div class="container">
-            <h2>What feature matters most to you?</h2>
-            <p class="poll-subtitle">Help us build what you actually need.</p>
-            <form id="poll-form" class="poll">
-                <label class="poll-option">
-                    <input type="radio" name="feature" value="auto-capture" checked>
-                    <span class="poll-label">Auto-capture expenses (no manual entry)</span>
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="feature" value="receipt-scan">
-                    <span class="poll-label">AI receipt scanning & item-level split</span>
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="feature" value="trip-mode">
-                    <span class="poll-label">Trip mode with live dashboard</span>
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="feature" value="instant-settle">
-                    <span class="poll-label">Instant settlement (pay inside the app)</span>
-                </label>
-                <label class="poll-option">
-                    <input type="radio" name="feature" value="global">
-                    <span class="poll-label">Works in any country</span>
-                </label>
-            </form>
         </div>
     </section>
 

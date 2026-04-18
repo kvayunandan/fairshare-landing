@@ -108,8 +108,51 @@ body {
 
 /* Waitlist Form */
 .waitlist-form {
-    max-width: 500px;
+    max-width: 540px;
     margin: 0 auto 40px;
+}
+
+.interest-label {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 16px 0 10px;
+    text-align: center;
+}
+
+.interest-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 4px;
+}
+
+.interest-chip {
+    cursor: pointer;
+}
+
+.interest-chip input {
+    display: none;
+}
+
+.interest-chip span {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    transition: all 0.2s;
+}
+
+.interest-chip input:checked + span {
+    border-color: var(--primary);
+    background: rgba(108, 92, 231, 0.15);
+    color: var(--primary-light);
+}
+
+.interest-chip:hover span {
+    border-color: var(--primary);
 }
 
 .form-row {
